@@ -24,14 +24,14 @@ namespace move_picture
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            if (pictureBox1.Location.X > 0)
-           {
+            if (pictureBox1.Location.X + 5 < ClientRectangle.Width - pictureBox1.Width)
+            {
                 pictureBox1.Location = new Point(pictureBox1.Location.X + 5, pictureBox1.Location.Y);
             }
         }
         private void Button2_Click(object sender, EventArgs e)
         {
-            if (pictureBox1.Location.X + 5 < ClientRectangle.Width)
+            if (pictureBox1.Location.X > 0)
             {
                 pictureBox1.Location = new Point(pictureBox1.Location.X - 5, pictureBox1.Location.Y);
             }
